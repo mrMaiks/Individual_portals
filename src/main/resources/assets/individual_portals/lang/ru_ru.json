@@ -1,0 +1,12 @@
+{
+  "item.individual_portals.magicsticklvl_3": "§6Палочка",
+  "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
+  "item.individual_portals.magicsticklvl_2": "§6Палочка",
+  "gui.individual_portals.choiceportalslvl_1.coordinate": "Координаты телепорта",
+  "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
+  "entity.individual_portals.portal": "Портал",
+  "gui.individual_portals.choiceportalslvl_1.button_viernutsia": "Вернуться",
+  "item.individual_portals.magicsticklvl_1": "§6Палочка",
+  "key.individual_portals.opengui": "Открыть интерфейс",
+  "gui.individual_portals.choiceportalslvl_1.button_zakryto": "Закрыто"
+}

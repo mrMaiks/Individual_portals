@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "individual_portals:items/magic_stick_lvl_1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "texture": "magic_stick_lvl_1",
+    "customModelName": "Normal",
+    "name": "§6Портал",
+    "specialInfo": [
+      "Палочка 3 уровня."
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "harvestLevel": 1,
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 50,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.ENDER_PEARL"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Spawnportal"
+    }
+  }
+}

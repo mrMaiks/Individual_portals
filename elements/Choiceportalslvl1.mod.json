@@ -1,0 +1,79 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_portal_choice.png",
+          "use1Xscale": false,
+          "x": 57,
+          "y": 15
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "ID Измерения",
+          "name": "IdDimension",
+          "width": 120,
+          "height": 20,
+          "x": 78,
+          "y": 47
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Координаты",
+          "name": "coordinate",
+          "width": 120,
+          "height": 20,
+          "x": 78,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button_textures",
+          "image": "button_textures.png",
+          "hoveredImage": "button_textures_hover.png",
+          "onClick": {
+            "name": "AddUsercoordinate"
+          },
+          "x": 80,
+          "y": 136
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button_textures1",
+          "image": "button_textures.png",
+          "hoveredImage": "button_textures_hover.png",
+          "onClick": {
+            "name": "Adduserdate"
+          },
+          "x": 80,
+          "y": 73
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

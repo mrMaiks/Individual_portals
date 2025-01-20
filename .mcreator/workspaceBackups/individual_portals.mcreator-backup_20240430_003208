@@ -1,0 +1,406 @@
+{
+  "mod_elements": [
+    {
+      "name": "Magicsticklvl3",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicsticklvl_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/individual_portals/models/item/magicsticklvl_3.json",
+          "src/main/java/net/mcreator/individualportals/item/Magicsticklvl3Item.java"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Magicsticklvl2",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicsticklvl_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/item/Magicsticklvl2Item.java",
+          "src/main/resources/assets/individual_portals/models/item/magicsticklvl_2.json"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Magicsticklvl1",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicsticklvl_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/item/Magicsticklvl1Item.java",
+          "src/main/resources/assets/individual_portals/models/item/magicsticklvl_1.json"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Choiceportalslvl1",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choiceportalslvl_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/network/Choiceportalslvl1ButtonMessage.java",
+          "src/main/java/net/mcreator/individualportals/client/gui/Choiceportalslvl1Screen.java",
+          "src/main/java/net/mcreator/individualportals/world/inventory/Choiceportalslvl1Menu.java"
+        ]
+      }
+    },
+    {
+      "name": "Craftmagicsticklvl1",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftmagicsticklvl_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/individual_portals/recipes/craftmagicsticklvl_1.json"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Craftmagicsticklvl2",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftmagicsticklvl_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/individual_portals/recipes/craftmagicsticklvl_2.json"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Craftmagicsticklvl3",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftmagicsticklvl_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/individual_portals/recipes/craftmagicsticklvl_3.json"
+        ]
+      },
+      "path": "~/magic_stick"
+    },
+    {
+      "name": "Portalparticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalparticle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/client/particle/PortalparticleParticle.java",
+          "src/main/resources/assets/individual_portals/particles/portalparticle.json"
+        ]
+      }
+    },
+    {
+      "name": "Spawnportal",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnportal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/SpawnportalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenguiPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opengui_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/OpenguiPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Opengui",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opengui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/network/OpenguiMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Adduserdate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adduserdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/AdduserdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleport",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/TeleportProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortalPriObnovlieniiTikaSushchnosti",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_pri_obnovlienii_tika_sushchnosti",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/PortalPriObnovlieniiTikaSushchnostiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Portal",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/entity/PortalEntity.java",
+          "src/main/java/net/mcreator/individualportals/client/renderer/PortalRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AddUsercoordinate",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_usercoordinate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/individualportals/procedures/AddUsercoordinateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "close",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "IdDimension",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Overworld"
+    },
+    {
+      "name": "Coordinates",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "1 80 1"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "ru_ru": {
+      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
+      "entity.individual_portals.portal": "Портал",
+      "item.individual_portals.magicsticklvl_1": "§6Палочка",
+      "key.individual_portals.opengui": "Открыть интерфейс",
+      "item.individual_portals.magicsticklvl_3": "§6Палочка",
+      "item.individual_portals.magicsticklvl_2": "§6Палочка",
+      "gui.individual_portals.choiceportalslvl_1.coordinate": "Координаты телепорта",
+      "gui.individual_portals.choiceportalslvl_1.button_viernutsia": "Вернуться",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto": "Закрыто"
+    },
+    "en_us": {
+      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
+      "entity.individual_portals.portal": "Портал",
+      "item.individual_portals.magicsticklvl_1": "§6Палочка",
+      "key.individual_portals.opengui": "Открыть интерфейс",
+      "item.individual_portals.magicsticklvl_3": "§6Портал",
+      "item.individual_portals.magicsticklvl_2": "§6Палочка",
+      "gui.individual_portals.choiceportalslvl_1.coordinate": "Координаты",
+      "gui.individual_portals.choiceportalslvl_1.button_viernutsia": "Вернуться",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto": "Закрыто"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "magic_stick",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "individual_portals",
+    "modName": "Individual Portal\u0027s",
+    "version": "1.0.3",
+    "description": "Mod on individual portal",
+    "author": "m41ksuka",
+    "websiteURL": "https://www.youtube.com/channel/UCS9oJ5R11ffqL-uleF_BWag",
+    "license": "maiksuka",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Thank for download my first mod \u003c3",
+    "modElementsPackage": "net.mcreator.individualportals",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "individual_portals:magicsticklvl_1"
+  },
+  "addition": {
+    "item": "minecraft:wither_skeleton_skull"
+  },
+  "result": {
+    "item": "individual_portals:magicsticklvl_2"
+  }
+}

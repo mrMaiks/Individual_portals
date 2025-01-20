@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Открыть интерфейс",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenguiPriNazhatiiKlavishi"
+    }
+  }
+}

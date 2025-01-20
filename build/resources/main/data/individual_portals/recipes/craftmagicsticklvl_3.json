@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "individual_portals:magicsticklvl_2"
+  },
+  "addition": {
+    "item": "minecraft:dragon_breath"
+  },
+  "result": {
+    "item": "individual_portals:magicsticklvl_3"
+  }
+}

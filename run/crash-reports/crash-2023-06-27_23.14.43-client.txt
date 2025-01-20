@@ -1,0 +1,105 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 27.06.23 23:14
+Description: Rendering overlay
+
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Expected name at line 122 column 3 path $.animations.idle
+	at net.minecraft.util.JSONUtils.fromJson(JSONUtils.java:373) ~[forge:?] {re:classloading}
+	at net.minecraft.util.JSONUtils.fromJson(JSONUtils.java:397) ~[forge:?] {re:classloading}
+	at net.minecraft.util.JSONUtils.fromJson(JSONUtils.java:419) ~[forge:?] {re:classloading}
+	at software.bernie.geckolib3.file.AnimationFileLoader.loadFile(AnimationFileLoader.java:49) ~[geckolib3:3.0.103] {re:classloading}
+	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:27) ~[geckolib3:3.0.103] {re:classloading}
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:67) ~[geckolib3:3.0.103] {re:classloading}
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$null$5(GeckoLibCache.java:86) ~[geckolib3:3.0.103] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[?:1.8.0_332] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[?:1.8.0_332] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_332] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_332] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_332] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[?:1.8.0_332] {}
+Caused by: com.google.gson.stream.MalformedJsonException: Expected name at line 122 column 3 path $.animations.idle
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:505) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:414) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:738) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:739) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:714) ~[gson-2.8.0.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$35$1.read(TypeAdapters.java:910) ~[gson-2.8.0.jar:?] {}
+	at net.minecraft.util.JSONUtils.fromJson(JSONUtils.java:371) ~[forge:?] {re:classloading}
+	... 12 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:496) ~[forge:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:496) ~[forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1003) ~[forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:612) ~[forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332] {}
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:38) ~[forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:94) [forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_332, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 317951784 bytes (303 MB) / 1744830464 bytes (1664 MB) up to 3801088000 bytes (3625 MB)
+	CPUs: 12
+	JVM Flags: 2 total; -XX:+IgnoreUnrecognizedVMOptions -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.39
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |SIDED_SETU|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Individual Portal's           |individual_portals            |1.0.0               |SIDED_SETU|Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.39_mapped_snapshot_20201028-1.16|Forge                         |forge                         |36.2.39             |SIDED_SETU|Manifest: NOSIGNATURE
+		geckolib-forge-1.16.5-3.0.103_mapped_snapshot_2020|GeckoLib                      |geckolib3                     |3.0.103             |SIDED_SETU|Manifest: NOSIGNATURE
+	Crash Report UUID: f75497da-fad5-4ece-a777-a435d81dc125
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Radeon RX550/550 Series GL version 4.6.0 Compatibility Profile Context 23.5.2.230523, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 12x AMD Ryzen 5 3600 6-Core Processor 
