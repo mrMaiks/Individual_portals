@@ -39,8 +39,8 @@
       "registry_name": "magicsticklvl_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/individualportals/item/Magicsticklvl1Item.java",
-          "src/main/resources/assets/individual_portals/models/item/magicsticklvl_1.json"
+          "src/main/resources/assets/individual_portals/models/item/magicsticklvl_1.json",
+          "src/main/java/net/mcreator/individualportals/item/Magicsticklvl1Item.java"
         ]
       },
       "path": "~/magic_stick"
@@ -54,9 +54,9 @@
       "registry_name": "choiceportalslvl_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/individualportals/network/Choiceportalslvl1ButtonMessage.java",
+          "src/main/java/net/mcreator/individualportals/world/inventory/Choiceportalslvl1Menu.java",
           "src/main/java/net/mcreator/individualportals/client/gui/Choiceportalslvl1Screen.java",
-          "src/main/java/net/mcreator/individualportals/world/inventory/Choiceportalslvl1Menu.java"
+          "src/main/java/net/mcreator/individualportals/network/Choiceportalslvl1ButtonMessage.java"
         ]
       }
     },
@@ -110,8 +110,8 @@
       "registry_name": "portalparticle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/individualportals/client/particle/PortalparticleParticle.java",
-          "src/main/resources/assets/individual_portals/particles/portalparticle.json"
+          "src/main/resources/assets/individual_portals/particles/portalparticle.json",
+          "src/main/java/net/mcreator/individualportals/client/particle/PortalparticleParticle.java"
         ]
       }
     },
@@ -350,27 +350,27 @@
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
-      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
-      "entity.individual_portals.portal": "Портал",
-      "item.individual_portals.magicsticklvl_1": "§6Палочка",
-      "key.individual_portals.opengui": "Открыть интерфейс",
       "item.individual_portals.magicsticklvl_3": "§6Палочка",
+      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
       "item.individual_portals.magicsticklvl_2": "§6Палочка",
       "gui.individual_portals.choiceportalslvl_1.coordinate": "Координаты телепорта",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
+      "entity.individual_portals.portal": "Портал",
       "gui.individual_portals.choiceportalslvl_1.button_viernutsia": "Вернуться",
+      "item.individual_portals.magicsticklvl_1": "§6Палочка",
+      "key.individual_portals.opengui": "Открыть интерфейс",
       "gui.individual_portals.choiceportalslvl_1.button_zakryto": "Закрыто"
     },
     "en_us": {
-      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
-      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
-      "entity.individual_portals.portal": "Портал",
-      "item.individual_portals.magicsticklvl_1": "§6Палочка",
-      "key.individual_portals.opengui": "Открыть интерфейс",
       "item.individual_portals.magicsticklvl_3": "§6Портал",
+      "gui.individual_portals.choiceportalslvl_1.IdDimension": "ID Измерения",
       "item.individual_portals.magicsticklvl_2": "§6Палочка",
       "gui.individual_portals.choiceportalslvl_1.coordinate": "Координаты",
+      "gui.individual_portals.choiceportalslvl_1.button_zakryto1": "Закрыто",
+      "entity.individual_portals.portal": "Портал",
       "gui.individual_portals.choiceportalslvl_1.button_viernutsia": "Вернуться",
+      "item.individual_portals.magicsticklvl_1": "§6Палочка",
+      "key.individual_portals.opengui": "Открыть интерфейс",
       "gui.individual_portals.choiceportalslvl_1.button_zakryto": "Закрыто"
     }
   },
@@ -386,7 +386,7 @@
   "workspaceSettings": {
     "modid": "individual_portals",
     "modName": "Individual Portal\u0027s",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Mod on individual portal",
     "author": "m41ksuka",
     "websiteURL": "https://www.youtube.com/channel/UCS9oJ5R11ffqL-uleF_BWag",
@@ -402,5 +402,5 @@
     "modElementsPackage": "net.mcreator.individualportals",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300224119
+  "mcreatorVersion": 202300336712
 }

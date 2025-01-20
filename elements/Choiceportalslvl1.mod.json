@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 298,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -15,8 +15,8 @@
         "data": {
           "image": "gui_portal_choice.png",
           "use1Xscale": false,
-          "x": 57,
-          "y": 15
+          "x": 63,
+          "y": 12
         }
       },
       {
@@ -26,8 +26,8 @@
           "name": "IdDimension",
           "width": 120,
           "height": 20,
-          "x": 78,
-          "y": 47
+          "x": 86,
+          "y": 43
         }
       },
       {
@@ -37,8 +37,8 @@
           "name": "coordinate",
           "width": 120,
           "height": 20,
-          "x": 78,
-          "y": 110
+          "x": 86,
+          "y": 109
         }
       },
       {
@@ -50,8 +50,8 @@
           "onClick": {
             "name": "AddUsercoordinate"
           },
-          "x": 80,
-          "y": 136
+          "x": 88,
+          "y": 137
         }
       },
       {
@@ -63,8 +63,8 @@
           "onClick": {
             "name": "Adduserdate"
           },
-          "x": 80,
-          "y": 73
+          "x": 88,
+          "y": 70
         }
       }
     ],

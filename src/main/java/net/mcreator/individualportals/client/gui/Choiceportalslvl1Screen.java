@@ -38,7 +38,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 298;
 		this.imageHeight = 166;
 	}
 
@@ -58,7 +58,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 		RenderSystem.defaultBlendFunc();
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("individual_portals:textures/screens/gui_portal_choice.png"));
-		this.blit(ms, this.leftPos + -68, this.topPos + -22, 0, 0, 300, 256, 300, 256);
+		this.blit(ms, this.leftPos + -1, this.topPos + -25, 0, 0, 300, 256, 300, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -97,7 +97,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		IdDimension = new EditBox(this.font, this.leftPos + -47, this.topPos + 10, 120, 20, new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.IdDimension")) {
+		IdDimension = new EditBox(this.font, this.leftPos + 21, this.topPos + 6, 120, 20, new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.IdDimension")) {
 			{
 				setSuggestion(new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.IdDimension").getString());
 			}
@@ -123,7 +123,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 		IdDimension.setMaxLength(32767);
 		guistate.put("text:IdDimension", IdDimension);
 		this.addWidget(this.IdDimension);
-		coordinate = new EditBox(this.font, this.leftPos + -47, this.topPos + 73, 120, 20, new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.coordinate")) {
+		coordinate = new EditBox(this.font, this.leftPos + 21, this.topPos + 72, 120, 20, new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.coordinate")) {
 			{
 				setSuggestion(new TranslatableComponent("gui.individual_portals.choiceportalslvl_1.coordinate").getString());
 			}
@@ -149,7 +149,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 		coordinate.setMaxLength(32767);
 		guistate.put("text:coordinate", coordinate);
 		this.addWidget(this.coordinate);
-		imagebutton_button_textures = new ImageButton(this.leftPos + -45, this.topPos + 99, 115, 23, 0, 0, 23, new ResourceLocation("individual_portals:textures/screens/atlas/imagebutton_button_textures.png"), 115, 46, e -> {
+		imagebutton_button_textures = new ImageButton(this.leftPos + 23, this.topPos + 100, 115, 23, 0, 0, 23, new ResourceLocation("individual_portals:textures/screens/atlas/imagebutton_button_textures.png"), 115, 46, e -> {
 			if (true) {
 				IndividualPortalsMod.PACKET_HANDLER.sendToServer(new Choiceportalslvl1ButtonMessage(0, x, y, z));
 				Choiceportalslvl1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -157,7 +157,7 @@ public class Choiceportalslvl1Screen extends AbstractContainerScreen<Choiceporta
 		});
 		guistate.put("button:imagebutton_button_textures", imagebutton_button_textures);
 		this.addRenderableWidget(imagebutton_button_textures);
-		imagebutton_button_textures1 = new ImageButton(this.leftPos + -45, this.topPos + 36, 115, 23, 0, 0, 23, new ResourceLocation("individual_portals:textures/screens/atlas/imagebutton_button_textures1.png"), 115, 46, e -> {
+		imagebutton_button_textures1 = new ImageButton(this.leftPos + 23, this.topPos + 33, 115, 23, 0, 0, 23, new ResourceLocation("individual_portals:textures/screens/atlas/imagebutton_button_textures1.png"), 115, 46, e -> {
 			if (true) {
 				IndividualPortalsMod.PACKET_HANDLER.sendToServer(new Choiceportalslvl1ButtonMessage(1, x, y, z));
 				Choiceportalslvl1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
